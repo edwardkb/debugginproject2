@@ -1,0 +1,75 @@
+/*container div hides the animated text and also prevents scroll bars
+from appearing since we are placing the animated p element off :-moz-full-screen*/
+
+div{
+    overflow: hidden; /*hide the text while it's outside the div's height*/
+    max-height: 500px; /*trick to prevent div from expanding vertically*/
+    height: 500px;
+    width: 100%;
+  
+   
+}
+p {
+    /* animation-duration: 5s; */
+    /* animation-name: slideInUp;  */
+    margin-left:10px;
+    animation: slideInUp 5s  ease-in-out forwards;
+}
+ 
+@keyframes slideInUp {
+    from { 
+        margin-top: 40%;
+    }
+    to { 
+        margin-top: 16px; 
+    }
+}
+
+
+/*navbar styles*/
+
+#navbar {
+    position: relative;
+    width: 100%;
+    height: 34px;
+    margin: 0 0 3px 0;
+    padding: 0;
+    list-style: none;
+    background-color: #ddedfb;
+    border-bottom: 1px solid #cccccc;
+}
+
+#navbar li {float: left;
+}
+#navbar li a{
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-right: 1px solid #cccccc;
+    float: left;
+    
+ 
+    
+
+}
+
+#navbar li a:hover{
+    color: #c00;
+    background-color: #ffffff;
+
+}
+body {
+    margin: 0px;
+    border: #c00;
+    background-color: #0c0c0c;
+}
+
+h1, p {
+    margin: 0 40x 20px 40px;
+    color: white;
+    font-weight: bolder;
+
+}
+
